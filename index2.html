@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Script File3</title>
+
+    <style>
+        * {
+            background-color: rgb(142, 109, 172);
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // @ts-check
+        //string Data type
+
+        let color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+        let order = ["4th", "1st", "2nd", "3rd"];
+        console.log(color);
+        console.log(order);
+
+        let combined = color.concat(order); // ორი მასივი გავაერთიანეთ ერთში -კონკატინაცია
+        console.log(combined);
+
+        console.log(combined.at(8), "choice is", combined.at(0));
+        console.log(combined.at(9), "choice is", combined.at(1));
+        console.log(combined.at(10), "choice is", combined.at(2));
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Script File2</title>
+
+    <style>
+        * {
+            background-color: rgb(142, 109, 172);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // @ts-check
+        //string Data type
+
+        // 5 ოკეანე გავანაწილოთ 5 ელემენტად ;
+
+        const oceans = ["Pacific", "Atlantic", "Indian", "Arctic", "Antarctic",];
+
+        console.log(oceans.length - 0); //მასივის ელემენტების რაოდენობას ადგენს
+
+        console.log(oceans); // გამოიტანს მასივის ყველა ელემენტს
+
+        console.log(oceans[0]); //!! კონკრეტულ ელემენტზე წვდომა - ამ შემთხვევაში პირველ ელემენტზე წვდომა.
+        console.log(oceans.at(-1)); //!! ბოლო ელემენტზე წვდომა
+
+        console.log(oceans.includes("Indian")); //ამოწმებს არის თუ არა კონკრეტული ელემენტი მასივში
+        console.log(oceans.includes("Black Sea"));
+
+    </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Script File3</title>
+
+    <style>
+        * {
+            background-color: rgb(142, 109, 172);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        // @ts-check
+        //string Data type
+
+        const person = {
+            firstName: "Nana",
+            lastName: "Esiava",
+            age: "29",
+            eyeColor: "blue",
+            isMaried: false,
+            children: [],
+            profession: 'student',
+            placeOfStudie: [
+                {
+                    name: 'Apollon Kutateladze Tbilisi State Academy Of Art',
+                    facultie: 'Fine Arts',
+                    direction: 'Painting',
+                }
+            ],
+            hobbies: [
+                {
+                    name: 'music',
+                    use: 'helps mind to creativity',
+                },
+                {
+                    name: 'astronomy',
+                    use: 'discovery of new horizons'
+                }
+            ],
+        }
+
+        // console.log(person);
+
+        //მონაცემის დამატება :
+        person.address = "Tbilisi";
+        person.religion = "Orthodox Christianity";
+        person.nickName = "Nanuka";
+
+        console.log(person);
+
+        //მონაცემის ამოშლა :
+
+        // delete person.age;
+        // delete person.hobbies;
+        // console.log(person);
+
+        //მონაცემის შეცვლა :
+
+        // person.eyeColor = "green";
+        // console.log(person);
+
+
+
+
+    </script>
+
+</body>
+
+</html>
