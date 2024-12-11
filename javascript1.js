@@ -35,6 +35,7 @@
 
 //მაგალითი 5:კალკულატორი :
 
+//const number1 = prompt('Enter number 1 : ');
 //const action = prompt('Enter action ( either +, -, * or / ): ');
 //const number2 = prompt('Enter number 2 : ');
 
