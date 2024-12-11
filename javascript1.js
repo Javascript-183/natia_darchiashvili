@@ -35,29 +35,26 @@
 
 //მაგალითი 5:კალკულატორი :
 
-//const number1 = prompt('Enter number 1 : ');
-//const action = prompt('Enter action ( either +, -, * or / ): ');
-//const number2 = prompt('Enter number 2 : ');
+const number1 = parseFloat(prompt('Enter  number 1: '));
+const action = prompt('Enter action ( either +, -, * or / ): ');
+const number2 = parseFloat(prompt('Enter  number 2: '));
 
-//function calculator(number1, action, number2) {
-//    if (action == '+') {
-//        console.log(number1 + number2);
-//    }
-//    else if (action == '-') {
-//        console.log(number1 - number2);
-//    }
-//    else if (action == '*') {
-//       console.log(number1 * number2);
-//   }
-//    else if (action == '/') {
-//        console.log(number1 / number2);
-//    }
-//    else {
-//        console.log("Incorect action!")
-//    }
-//}
+let result;
 
-//calculator()
+if (action == '+') {
+    result = number1 + number2;
+}
+else if (action == '-') {
+    result = number1 - number2;
+}
+else if (action == '*') {
+    result = number1 * number2;
+}
+else {
+    result = number1 / number2;
+}
+
+console.log(`${number1} ${action} ${number2} = ${result}`);
 
 
 //მაგალითი 3:
