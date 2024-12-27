@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 7 Homework</title>
+    <style>
+        #color-text {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        #content {
+            display: none;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- დავალება 1: ფოტოსათვის ზომების ცვლილება -->
+    <h2>Image Resizer</h2>
+    <img id="image" src="./Untitled.png" alt="Placeholder Image" style="width: 150px;">
+    <br>
+    <button id="increase-size">Increase Size</button>
+    <button id="decrease-size">Decrease Size</button>
+
+
+
+    <!-- დავალება 2: ტექსტისთვის ფერების ცვლილება -->
+    <h2>Text Color Changer</h2>
+    <div id="color-text" style="color: red;">red</div>
+    <button id="change-color">Change Color</button>
+
+
+
+    <!-- დავალება 3: ჩვენების და დამალვის ღილაკები -->
+    <h2>Toggle Content Visibility</h2>
+    <button id="toggle-content">Show Content</button>
+    <div id="content">This is the hidden content!</div>
+
+    <script>
+        //-- დავალება 1: ფოტოსათვის ზომების ცვლილება // 
+        const image = document.getElementById('image');
+        const increaseSizeButton = document.getElementById('increase-size');
+        const decreaseSizeButton = document.getElementById('decrease-size');
+
+        increaseSizeButton.addEventListener('click', () => {
+            const currentWidth = image.offsetWidth;
+            image.style.width = currentWidth + 20 + 'px';
+        });
+
+        decreaseSizeButton.addEventListener('click', () => {
+            const currentWidth = image.offsetWidth;
+            if (currentWidth > 50) {
+                image.style.width = currentWidth - 20 + 'px';
+            }
+        });
+
+        // დავალება 2: ტექსტისთვის ფერების ცვლილება //
+        const colorText = document.getElementById('color-text');
+        const changeColorButton = document.getElementById('change-color');
+        const colors = ['red', 'blue', 'green'];
+        let colorIndex = 0;
+
+        changeColorButton.addEventListener('click', () => {
+            colorIndex = (colorIndex + 1) % colors.length;
+            const newColor = colors[colorIndex];
+            colorText.style.color = newColor;
+            colorText.textContent = newColor;
+        });
+
+        // დავალება 3: ჩვენების და დამალვის ღილაკები //
+        const toggleContentButton = document.getElementById('toggle-content');
+        const content = document.getElementById('content');
+
+        toggleContentButton.addEventListener('click', () => {
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                toggleContentButton.textContent = 'Hide Content';
+            } else {
+                content.style.display = 'none';
+                toggleContentButton.textContent = 'Show Content';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
